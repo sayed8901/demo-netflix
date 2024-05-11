@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./images/header-image.png),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background-size: cover;
+  background-position: center;
+  padding: 10px 8px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.logo {
+  width: 150px;
+  margin-left: 150px;
+}
+
+nav button {
+  border: 0;
+  outline: 0;
+  background-color: red;
+  color: white;
+  padding: 8px 20px;
+  font-size: 12px;
+  border-radius: 3px;
+  margin-right: 150px;
+}
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* min-width: 900px; */
+}
+
+.header-content h2 {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 70px;
+}
+
+.header-content h4 {
+  font-size: 30px;
+  font-weight: bolder;
+  line-height: 70px;
+}
+
+.email-signup {
+  border-radius: 3px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.email-signup input {
+  border: 0;
+  outline: 0;
+  padding: 7px 20px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: rgb(238, 235, 235);
+}
+
+.email-signup button {
+  border: 0;
+  outline: 0;
+  background-color: red;
+  color: white;
+  padding: 8px 20px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.features {
+  padding: 50px;
+  font-size: 20px;
+}
+
+.features h2 {
+  font-size: 50px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.img-col img {
+  width: 90%;
+  max-width: auto;
+}
+
+.faq {
+  padding: 10px 15%;
+  text-align: center;
+  font-size: 10px;
+}
+
+/* custom accordion */
+
+/* start of css fpr accordion */
+.accordion {
+  margin: 60px auto;
+  width: 100%;
+  max-width: 700px;
+}
+
+.accordion li {
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+}
+
+.accordion li label {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 3px;
+  position: relative;
+}
+
+label::after {
+  content: "+";
+  font-size: 30px;
+  position: absolute;
+  right: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.accordion .content {
+  background: rgb(55, 54, 54);
+  text-align: left;
+  padding: 0 20px;
+  overflow: hidden;
+  max-height: 0;
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+  max-height: 400px;
+  padding: 20px 30px;
+}
+
+/* end of css for accordion */
